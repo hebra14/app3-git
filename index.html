@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+ <!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/temasapp3.min.css">
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/matar.jpg','imagenes/calentamiento-global.png','imagenes/Contaminaciohn.png','imagenes/d5811456e16c90d3bf71a8fdaebf840b.png')">
+ 
+ <div data-role="page" id="principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn-text="Regresar"  data-back-btn-theme="a">
+     <h1> Contaminacion del Planeta</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>La Contaminacion</h1>
+         <div>
+           <p>Ejemplo de la contaminacion</p>
+           <br>
+          </div>
+          <div> 
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25JKL','','imagenes/d5811456e16c90d3bf71a8fdaebf840b.png',1)"><img src="imagenes/contaminacion del aire.png" width="100%" height="100%" id="Image25JKL"></a></div>
+        </div>
+       </div>
+       <div>
+        <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Definición</h2>
+            </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+              <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                 <h2>Tipos de Contaminacion</h2>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+                 <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Consecuencias</h2>
+                 </a> 
+                </li>
+                <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                      <h2>Las Tres RRR</h2>
+                    </a>
+                 </li>
+                 <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina5" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>Medidas Preventivas</h2>
+                    </a>
+                  </li>
+                   <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina6" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>La Contamincion En Mi Entorno</h2>
+                    </a>
+                  </li>
+                   </ul>
+                </div>
+                <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                  <div>
+                    <img src="res/android/mdpi.png" width="46" height="46"> </div>
+                    <div>
+                      <h4> Aplicacion tres </h4>
+                      <h4> Braulio Hernández Ramos</h4>
+                     </div>
+                    </div>
+                   </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                      <h1>Definición</h1>
+                    </div>
+                     <div data-role="content" align="center">
+                       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25KL','','imagenes/Contaminaciohn.png',1)"><img src="imagenes/contaminacion.png" width="100%" height="100%" id="Image25KL"></a>
+<div>
+                       
+      <h2>Contaminacion</h2>
+                       
+                        <ul>
+                        <li>1.Acción de contaminar o contaminarse.
+"la contaminación atmosférica es uno de los problemas actuales con que se enfrentan las grandes ciudades"</li>
+                        <li>2. 
+Efecto de contaminar o contaminarse.
+"la contaminación o polución del aire y el agua es la consecuencia inmediata de la industrialización y tecnificación de la vida"</li>
+                        </ul>
+                        
+                       </div>
+                      </div>
+                      <div data-role="footer" data-theme="a" data-position="fixed">
+                        <h4>Aplicacion tres, BHR</h4>
+                        </div>
+                       </div>
+                      </div>
+                      
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                           <h1>Tipos de Contaminación </h1>
+                         </div>
+                         <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación del Aire</h1>
+         <div>
+                    <div>
+           <img src="imagenes/larger_pollu.jpg" width="100%" height="100%"> </div>
+           </div>
+          <div>
+           <p>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas.</p>
+           <br>
+          </div>
+
+           </div>
+           </div>
+           
+           
+           
+           
+                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación del Agua</h1>
+         <div>
+         <div>
+           <img src="imagenes/aguas-residuales.jpg" width="100%" height="100%"> </div>
+          <div>
+          <p>es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</p>
+ 
+           <br>
+          </div>
+
+           </div>
+           </div>
+           </div>
+           
+           
+                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación del Suelo</h1>
+         <div>
+                    <div>
+           <img src="imagenes/suelo.jpg" width="100%" height="100%"> </div>
+          <div>
+          <p>La contaminación del suelo es una degradación de la calidad del suelo asociada a la presencia de sustancias químicas.</p>
+ 
+           <br>
+          </div>
+
+           </div>
+           </div>
+           </div>
+                        
+                        
+                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación Luminosa</h1>
+         <div>
+                    <div>
+           <img src="imagenes/contaminacion luminosa.jpg" width="100%" height="100%"> </div>
+          <div>
+          <p>Es el brillo o resplandor de luz en el cielo nocturno producido por la reflexión y difusión de luz artificial en los gases y en las partículas del aire por el uso de luminarias inadecuadas o por excesos de iluminación.</p>
+ 
+           <br>
+          </div>
+
+           </div>
+           </div>
+           </div>
+                                       
+                         <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicaciones tres, BHR</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                           <h1>Consecuencias</h1>
+                         </div>
+                                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Calentamiento Global</h1>
+         <div>
+                    <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image224','','imagenes/calentamiento-global.png',1)"><img src="imagenes/Global_warming_ubx.svg.png" width="100%" height="100%" id="Image224"></a></div>
+
+          <div>
+          <p>El calentamiento global, del cual se habla mucho en los últimos tiempos, no es más que el ascenso continuo de las temperaturas en la atmósfera y en la superficie de la Tierra.</p>
+ 
+           <br>
+          </div>
+           </div>
+           </div>
+           </div>
+                                          <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Causas naturales del calentamiento global</h1>
+         <div>
+                    <div>
+                      <ul>
+                        <li>El vapor de agua es una fuente importante de aumento de la temperatura, pero también de la formación de las nubes y las precipitaciones. Es un proceso de retroalimentación natural que funciona como un equilibrio.</li>
+                        <li>El dióxido de carbono se libera a través de la respiración y los eventos volcánicos, gas también considerado de efecto invernadero, pero sus cantidades son suficientes para que se mantenga una temperatura estable en el planeta.</li>
+                        <li>Los ciclos climáticos que atraviesa la Tierra regularmente. Estos a su vez han estado determinados por las fluctuaciones solares</li>
+                        <li>El Sol es la fuente que impulsa nuestro clima, es natural que su radiación tenga un papel en los cambios de temperatura de la Tierra.</li>
+                      </ul>
+<img src="imagenes/135165205.jpg" width="100%" height="100%"> </div>
+           </div>
+          <div>
+          <H3>Cuando hablamos de causas naturales nos estamos refiriendo a aquellos procesos de la naturaleza que conllevan un aumento de las temperaturas terrestres.</H3>
+          <ul>
+            <br>
+          </ul>
+          </div>
+
+           </div>
+           </div>
+                          
+                           <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicaciones tres, BHR</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                           <h1>Las Tres erres Ecológicas</h1>
+                         </div>
+                         <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1>Reducir</h1>
+         <div>
+          <div>
+          <p>Reducir es la "erre" más importante ya que tiene el efecto más directo y amplio en la reducción de los daños al medio ambiente, y consiste en dos partes:</p>
+          <ul>
+          <li><strong>Comprar menos</strong> reduce el uso de energía, agua, materia prima (madera, metal, minerales, etc.) y químicos utilizados en la fabricación de los producto</li>
+          <li> <strong>Utilizar menos recursos</strong> (agua, energía, gasolina, etc.) se puede lograr con focos y electrodomésticos más eficientes, una casa bien mantenida y buenos hábitos</li>
+ </ul>
+           <br>
+          </div>
+           <div>
+          
+          <img src="imagenes/reduce_web.jpg" width="100%" height="100%">
+           </div>
+           </div>
+           </div>
+           </div>
+           
+ <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1>Reutilizar</h1>
+         <div>
+          <div>
+          <p>Reutilizar significa alargar la vida de cada producto desde cuando se compra hasta cuando se tira.</p>
+ 
+           <br>
+          </div>
+           <div>
+           <img src="imagenes/banners-55x250reutilizar1.jpg" width="100%" height="100%"></div>
+           </div>
+           </div>
+           </div>
+           
+           
+ <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1> Reciclar</h1>
+         <div>
+          <div>
+          <p>Reciclar es la erre más común y menos eficaz. Se trata de rescatar lo posible de un material que ya no sirve para nada (comúnmente llamado basura) y convertirlo en un producto nuevo.</p>
+ 
+           <br>
+          </div>
+           <div>
+           <img src="imagenes/Reduce-Your-Greenhouse-Gas-Emissions-Step-18-Version-3.jpg" width="100%" height="100%"> </div>
+           </div>
+           </div>
+           </div>
+           
+
+          
+
+ <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicaciones tres, BHR</h4>
+                           </div>
+                           </div>
+                           </div>
+                           
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                           <h1>Prevenir la contingencia ambiental</h1>
+                         </div>
+                         <div data-role="content" align="center">
+                           <div>
+                           <h2>15 Maneras sencillas de reducir la contaminación </h2></div>
+                           <div>
+                           <img src="imagenes/las-3-r-reducir-reutilizar-reciclar-1-728.jpg" width="100%" height="100%"> </div>
+                          <ul>
+                          <li>Afina y da mantenimiento a los automóviles</li>
+                          <li>Evita quemar basura y llantas, así como el uso de cohetes artificiales</li>
+                          <li>Evita comprar artículos desechables y plásticos que no son biodegradables.</li>
+                          <li>Recicla la basura</li>
+                          <li>No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa</li>
+                          <li>Usa racionalmente los plaguicidas</li>
+                          <li>Evita el consumo de tabaco</li>
+                          <li> Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad</li>
+                          <li>Pospón las tareas de ja
+                          rdinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono.</li>
+                          <li>Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)</li>
+                          <li>Restringe la limpieza en seco.</li>
+                          <li>Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono.</li>
+                          <li>Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</li>
+                          <li>Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</li>
+                          <li>– Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo.</li>
+                          </ul>
+                           
+
+                           </div>
+                           <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicaciones tres, BHR</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                      <h1>La contaminacion en nuestro entorno</h1>
+                    </div>
+                    <br>
+                    <div>
+                        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/coladeras_tapadas.jpg" alt="Coladeras Tapadas" title="Coladeras Tapadas" id="wows1_0"/></li>
+		<li><img src="data1/images/basura.jpg" alt="Basura" title="Basura" id="wows1_1"/></li>
+		<li><img src="data1/images/incendio.jpg" alt="Incendio" title="Incendio" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/quema_de_basura.jpg" alt="http://wowslider.net/" title="Quema de Basura" id="wows1_3"/></a></li>
+		<li><img src="data1/images/hidrocarburos.jpg" alt="Hidrocarburos" title="Hidrocarburos" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Coladeras Tapadas"><span><img src="data1/tooltips/coladeras_tapadas.jpg" alt="Coladeras Tapadas"/>1</span></a>
+		<a href="#" title="Basura"><span><img src="data1/tooltips/basura.jpg" alt="Basura"/>2</span></a>
+		<a href="#" title="Incendio"><span><img src="data1/tooltips/incendio.jpg" alt="Incendio"/>3</span></a>
+		<a href="#" title="Quema de Basura"><span><img src="data1/tooltips/quema_de_basura.jpg" alt="Quema de Basura"/>4</span></a>
+		<a href="#" title="Hidrocarburos"><span><img src="data1/tooltips/hidrocarburos.jpg" alt="Hidrocarburos"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<br>
+<div>
+<h3>
+El aumento continuo de la población, su concentración progresiva en grandes centros urbanos y el desarrollo industrial ocasionan, día a día, más problemas al medio ambiente conocidos como contaminación ambiental.
+</h3>
+</div>
+
+               <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Organizaciones</h1>
+         <div>
+
+            <div>
+          <h2>Panel Intergubernamental sobre Cambio Climático (IPCC) </h2>
+          <div>
+            <img src="imagenes/ipcc_fb.png" width="100%" height="100%">
+            <br>
+                        <address>
+            <a href="https://comunicacambioclimatico.wordpress.com/que-es-el-ipcc/" target="_self" >Visitar La Página </a>
+              
+            </address>
+          
+            </div>
+            
+ 
+           <br>
+          </div>
+           <div>
+           
+           </div>
+           </div>
+           </div>
+           </div>
+
+                                                       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Mis Propuestas</h1>
+         <div>
+         <img src="imagenes/under-the-dome-the-49152_big.jpg" width="100%" height="100%"><br>
+          <div>
+           <h3>El calentamiento global es algo que nos afecta a todos por igual tanto directa como indirectamente. Poner nuestro pequeño grano de arena para contribuir a solucionar o no agravar este fenómeno se verá reflejado en el mundo del mañana.</h3>
+           <br>
+           
+          </div>
+           </div>
+           </div>
+           </div>
+           
+
+                      <div data-role="footer" data-theme="a" data-position="fixed">
+                        <h4>Aplicacion tres, BHR</h4>
+                        </div>
+                       </div>
+                      </div>
+                         
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                            
+</head>
+
+<body>
+</body>
+</html>
